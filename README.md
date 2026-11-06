@@ -1,5 +1,9 @@
 # Company Radar
 
+[![CI](https://github.com/welkerfernandes/company-radar/actions/workflows/ci.yml/badge.svg)](https://github.com/welkerfernandes/company-radar/actions)
+
+![Dashboard preview](docs/dashboard.png)
+
 O cadastro de fornecedores exige evidência verificável e revisão humana; um status opaco não explica o que precisa de atenção.
 
 Plataforma executável com dashboard responsivo, API autenticada e integração real com **BrasilAPI**.
@@ -90,3 +94,5 @@ A imagem Docker compila o frontend e o motor nativo e j? ativa o componente Go/J
 ## Verificação em navegador
 
 O job `browser` da CI executa fluxos em Chromium, verifica a versão de 390 px e publica capturas como artifact `dashboard-screenshots`. Execute `npm install` em `ui/`, `npx playwright install chromium` e `node ui/smoke.cjs` na raiz com a API em localhost:8000 para repetir.
+
+Consulte o [registro de validação](docs/validation.md) e a [captura mobile](docs/mobile.png).
